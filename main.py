@@ -3,8 +3,8 @@ from operator import itemgetter
 class restaurant:
     def __init__(self):
         self.mesas = {}
-        self.estoque = []
-        self.cardapio = []
+        self.estoque = {}
+        self.cardapio = {}
         self.pedidos = []
         self.aux = {}
     
@@ -31,7 +31,10 @@ class restaurant:
         for elemento in arq.readlines():
             elemento = elemento.strip('\n')
             elemento = elemento.split(',')
-            self.cardapio.append(elemento)
+            self.cardapio[elemento[0]] = []
+            for ingrediente in elemento:
+                if ingrediente != elemento[0]:
+                    self.cardapio[elemento[0]].append(ingrediente)
         arq.close()
 
     def atualizar_estoque(self):#deve-se ler um arquivo contendo uma configuração de estoque contendo ingredientes e suas respectivas quantidades.
@@ -44,7 +47,10 @@ class restaurant:
         for elemento in arq.readlines():
             elemento = elemento.strip('\n')
             elemento = elemento.split(',')
-            self.estoque.append(elemento)
+            if elemento[0] in self.estoque:
+                self.estoque[elemento[0]] += int(elemento[1])
+            else:
+                self.estoque[elemento[0]] = int(elemento[1])
         arq.close()
     
     def relatorio_mesas(self):
@@ -57,7 +63,7 @@ class restaurant:
             for chave in self.aux:
                 if detec != chave[1]: 
                     print(f'area:{chave[1]}')
-                print(f'- mesa:{chave[0]}, status:{self.mesas[chave[0]]}')
+                print(f'- mesa: {chave[0]}, status:{self.mesas[chave[0]]}')
                 detec = chave[1]
 
         self.aux = dict(self.aux)
@@ -66,61 +72,57 @@ class restaurant:
         if len(self.cardapio) == 0:
             print('- cardapio vazio')
         else:
-            self.cardapio.sort()
-            for cardapio in self.cardapio:
-                print(f'item: {cardapio[0]}')
-                for ingrediente in cardapio[1:]:
-                    qt_mesmo_ingrediente = cardapio[1:].count(ingrediente)
-                print(f'{ingrediente}: {qt_mesmo_ingrediente}')
+            self.cardapio = sorted(self.cardapio.items(),key=itemgetter(0))
+            for elemento in self.cardapio:
+                elemento[1].sort()
+
+            for elemento in self.cardapio:
+                print(f'item: {elemento[0]}')
+                detec = None
+                for ingrediente in elemento[1]:
+                    if detec != ingrediente:
+                        print(f'-{ingrediente}: {elemento[1].count(ingrediente)}')
+                    detec = ingrediente
+
+        self.cardapio = dict(self.cardapio)
     
     def relatorio_estoque(self):
         if len(self.estoque) == 0:
             print('- estoque vazio')
         else:
-            self.estoque.sort()
+            self.estoque = sorted(self.estoque.items(),key=itemgetter(0))
             for elemento in self.estoque:
-                print(f'{elemento[0]}:{elemento[1]}')
-    
+                print(f'{elemento[0]}: {elemento[1]}')
+        
+        self.estoque = dict(self.estoque)
+
     def fazer_pedidos(self):
         pedido = entradas[x+1].split(',')
         
-        mesaExist = False
-        for mesa in self.mesas:
-            if mesa[0] == pedido[0]:
-                mesaExist = True
-                aux = mesa[:]
-        
-        itemExist = False
-        for receita in self.cardapio:
-            if ' {}'.format(receita[0]) == pedido[1]:
-                aux2 = receita[:]
-                itemExist = True
-
-        '''if aux2:
-            qts_ingredientes = len(aux2)
-            cont = 0
-            for ingrediente in aux2:
-                for item in self.estoque:
-                    if ingrediente == item[0]:
-                        cont += 1'''
         #verficar se a mesa existe
-        if mesaExist == False:
+        if pedido[0] not in self.mesas:
             print(f'erro >> mesa {pedido[0]} inexistente')
         
         #verificar se está ocupada
-        elif aux[2] != ' ocupada':
+        elif self.mesas[pedido[0]] != ' ocupada':
             print(f'erro >> mesa {pedido[0]} desocupada')
         
         #verificar se o item existe
-        elif itemExist == False:
-            print(f'erro >> item {pedido[1]} nao existe no cardapio')
+        elif pedido[1].strip(' ') not in self.cardapio:
+            print(f'erro >> item{pedido[1]} nao existe no cardapio')
         
-        #verificar se os ingredientes sao suficientes   
-        #elif cont != qts_ingredientes:
-         #   print(f'erro >> ingredientes insuficientes para produzir o item {pedido[1]}')
+        #verificar se os ingredientes sao suficientes 
+        elif len(self.estoque) == 0:
+            print(f'erro >> ingredientes insuficientes para produzir o item {pedido[1]}')  
 
         else:
-            print(f'sucesso >> pedido realizado: item {pedido[1]} para mesa {pedido[0]}')
+            print(f'sucesso >> pedido realizado: item{pedido[1]} para mesa {pedido[0]}')
+            ingredientes_pedido = self.cardapio[pedido[1].strip(' ')]
+            if len(self.estoque) != 0:
+                for elemento in ingredientes_pedido:
+                    self.estoque[elemento.strip(' ')] -= 1
+                    if self.estoque[elemento.strip(' ')] == 0:
+                        self.estoque.pop(elemento.strip(' '))  
             self.pedidos.append(pedido)
         #fazer alteraçoes para essas quatro condiç~pes estejam relacionadas
                 
@@ -183,5 +185,3 @@ for x in range(len(entradas)):
         print('erro >> comando inexistente')
     else:
         pass
-
-
