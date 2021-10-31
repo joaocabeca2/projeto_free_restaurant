@@ -98,7 +98,7 @@ class restaurant:
 
     def fazer_pedidos(self):
         pedido = entradas[x+1].split(',')
-        
+
         #verficar se a mesa existe
         if pedido[0] not in self.mesas:
             print(f'erro >> mesa {pedido[0]} inexistente')
@@ -112,8 +112,8 @@ class restaurant:
             print(f'erro >> item{pedido[1]} nao existe no cardapio')
         
         #verificar se os ingredientes sao suficientes 
-        elif len(self.estoque) == 0:
-            print(f'erro >> ingredientes insuficientes para produzir o item {pedido[1]}')  
+        elif len(self.estoque) == 0 or self.verificar(pedido[1]) == False:
+            print(f'erro >> ingredientes insuficientes para produzir o item{pedido[1]}')  
 
         else:
             print(f'sucesso >> pedido realizado: item{pedido[1]} para mesa {pedido[0]}')
@@ -124,7 +124,6 @@ class restaurant:
                     if self.estoque[elemento.strip(' ')] == 0:
                         self.estoque.pop(elemento.strip(' '))  
             self.pedidos.append(pedido)
-        #fazer alteraçoes para essas quatro condiç~pes estejam relacionadas
                 
     def relatorio_pedidos(self):
         aux = self.pedidos[:]
@@ -132,9 +131,12 @@ class restaurant:
             print('- nenhum pedido foi realizado')
         else:               
             aux.sort()
+            detec = None
             for pedido in aux:
-                print(f'mesa: {pedido[0]}')
+                if detec != pedido[0]:
+                    print(f'mesa: {pedido[0]}')
                 print(f'-{pedido[1]}')
+                detec = pedido[0]
 
     def fechar_restaurante(self):
         if len(self.pedidos) == 0:
@@ -143,6 +145,14 @@ class restaurant:
             for x in range(len(self.pedidos)):
                 print(f'{x+1}. mesa {self.pedidos[x][0]} pediu{self.pedidos[x][1]}')
         print('=> restaurante fechado')
+    
+    def verificar(self,pedido):   
+        for elemento in self.cardapio[pedido.strip(' ')]:
+            if elemento.strip(' ') not in self.estoque:
+                return False
+        else:
+            return True
+
 
 Myrestaurant = restaurant()
 entradas = []
@@ -156,6 +166,7 @@ print('=> restaurante aberto')
 for x in range(len(entradas)):
     if entradas[x] == '+ atualizar mesas':
         Myrestaurant.atualizar_mesas()
+        
 
     elif entradas[x] == '+ atualizar cardapio':
         Myrestaurant.atualizar_cardapio()
