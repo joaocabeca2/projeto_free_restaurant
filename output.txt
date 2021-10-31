@@ -1,0 +1,731 @@
+=> restaurante aberto
+- nenhum pedido foi realizado
+- restaurante sem mesas
+- cardapio vazio
+- estoque vazio
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+- nenhum pedido foi realizado
+erro >> mesa 5 inexistente
+erro >> mesa 4 desocupada
+erro >> item macarrao nao existe no cardapio
+sucesso >> pedido realizado: item feijoada para mesa 3
+mesa: 3
+- feijoada
+erro >> comando inexistente
+1. mesa 3 pediu feijoada
+=> restaurante fechado
+
+=> restaurante aberto
+area: area_1
+- area sem mesas
+area: area_10
+- area sem mesas
+area: area_11
+- area sem mesas
+area: area_12
+- area sem mesas
+area: area_13
+- area sem mesas
+area: area_14
+- area sem mesas
+area: area_15
+- area sem mesas
+area: area_16
+- area sem mesas
+area: area_17
+- area sem mesas
+area: area_18
+- area sem mesas
+area: area_19
+- area sem mesas
+area: area_2
+- area sem mesas
+area: area_20
+- mesa: 102, status: ocupada
+area: area_3
+- area sem mesas
+area: area_4
+- area sem mesas
+area: area_5
+- area sem mesas
+area: area_6
+- area sem mesas
+area: area_7
+- area sem mesas
+area: area_8
+- area sem mesas
+area: area_9
+- area sem mesas
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+calabresa: 21
+canela: 89
+carne: 1
+cebola: 3
+doce de leite: 55
+massa de churros: 34
+massa de esfiha: 1
+massa de pastel: 7
+nata: 6
+nutella: 9
+ovo: 4
+queijo: 8
+salsa: 13
+semolina: 5
+tomate: 2
+sucesso >> pedido realizado: item esfiha de carne para mesa 1
+calabresa: 21
+canela: 89
+cebola: 2
+doce de leite: 55
+massa de churros: 34
+massa de pastel: 7
+nata: 6
+nutella: 9
+ovo: 4
+queijo: 8
+salsa: 13
+semolina: 4
+tomate: 1
+1. mesa 1 pediu esfiha de carne
+=> restaurante fechado
+
+=> restaurante aberto
+- restaurante sem mesas
+area: amarelinho central
+- mesa: 3, status: ocupada
+- mesa: 5, status: livre
+area: amarelinho norte
+- mesa: 1, status: livre
+- mesa: 4, status: ocupada
+- mesa: 6, status: ocupada
+area: amarelinho sul
+- mesa: 2, status: ocupada
+area: amarelinho central
+- mesa: 3, status: ocupada
+- mesa: 5, status: livre
+area: amarelinho norte
+- mesa: 1, status: livre
+- mesa: 4, status: ocupada
+- mesa: 6, status: ocupada
+area: amarelinho sul
+- mesa: 2, status: ocupada
+area: refeitorio 1
+- mesa: 10, status: ocupada
+- mesa: 11, status: ocupada
+area: refeitorio 2
+- mesa: 20, status: ocupada
+- mesa: 21, status: ocupada
+area: refeitorio 3
+- mesa: 30, status: ocupada
+- mesa: 31, status: ocupada
+area: refeitorio 4
+- mesa: 40, status: ocupada
+- mesa: 41, status: livre
+area: refeitorio 5
+- mesa: 50, status: ocupada
+- mesa: 51, status: livre
+area: refeitorio 6
+- mesa: 60, status: livre
+- mesa: 61, status: livre
+area: ru gourmet
+- mesa: 70, status: livre
+- mesa: 71, status: livre
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+- cardapio vazio
+item: agua
+- agua: 1
+item: feijoada
+- arroz: 1
+- farofa de couve: 1
+- feijao: 1
+- laranja: 1
+- linguica: 1
+- molho de pimenta: 1
+item: sobremesa
+- abacaxi: 2
+item: suco
+- tang de limao: 1
+item: agua
+- agua: 1
+item: feijoada
+- arroz: 1
+- farofa de couve: 1
+- feijao: 1
+- laranja: 1
+- linguica: 1
+- molho de pimenta: 1
+item: macarrao
+- macarrao: 1
+- molho a bolonhesa: 1
+- queijo mussarela: 1
+item: sobremesa
+- abacaxi: 2
+item: suco
+- tang de caju: 1
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+- estoque vazio
+macarrao: 1
+molho a bolonhesa: 1
+queijo mussarela: 1
+tang de caju: 1
+macarrao: 2
+molho a bolonhesa: 2
+queijo mussarela: 2
+tang de caju: 2
+abacaxi: 10
+agua: 10
+arroz: 10
+farofa de couve: 10
+feijao: 10
+laranja: 10
+linguica: 10
+macarrao: 2
+molho a bolonhesa: 2
+molho de pimenta: 10
+queijo mussarela: 2
+tang de caju: 2
+tang de limao: 10
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+erro >> mesa 1 inexistente
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+erro >> mesa 51 desocupada
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+erro >> item carne de sol nao existe no cardapio
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+erro >> ingredientes insuficientes para produzir o item feijoada
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+sucesso >> pedido realizado: item feijoada para mesa 50
+mesa: 50
+- feijoada
+abacaxi: 10
+agua: 10
+arroz: 9
+farofa de couve: 9
+feijao: 9
+laranja: 9
+linguica: 9
+molho de pimenta: 9
+tang de limao: 10
+1. mesa 50 pediu feijoada
+=> restaurante fechado
+
+=> restaurante aberto
+item: macarrao
+- macarrao: 1
+- molho a bolonhesa: 1
+- queijo mussarela: 1
+item: suco
+- tang de caju: 1
+macarrao: 1
+molho a bolonhesa: 1
+queijo mussarela: 1
+tang de caju: 1
+sucesso >> pedido realizado: item macarrao para mesa 3
+mesa: 3
+- macarrao
+tang de caju: 1
+sucesso >> pedido realizado: item suco para mesa 4
+mesa: 3
+- macarrao
+mesa: 4
+- suco
+- estoque vazio
+erro >> ingredientes insuficientes para produzir o item macarrao
+mesa: 3
+- macarrao
+mesa: 4
+- suco
+- estoque vazio
+macarrao: 1
+molho a bolonhesa: 1
+queijo mussarela: 1
+tang de caju: 1
+sucesso >> pedido realizado: item macarrao para mesa 6
+mesa: 3
+- macarrao
+mesa: 4
+- suco
+mesa: 6
+- macarrao
+tang de caju: 1
+sucesso >> pedido realizado: item suco para mesa 2
+mesa: 2
+- suco
+mesa: 3
+- macarrao
+mesa: 4
+- suco
+mesa: 6
+- macarrao
+- estoque vazio
+1. mesa 3 pediu macarrao
+2. mesa 4 pediu suco
+3. mesa 6 pediu macarrao
+4. mesa 2 pediu suco
+=> restaurante fechado
+=======================
+
+=> restaurante aberto
+sucesso >> pedido realizado: item big mac para mesa 1
+sucesso >> pedido realizado: item big tasty para mesa 1
+sucesso >> pedido realizado: item big mac para mesa 1
+sucesso >> pedido realizado: item cheddar mcmelt para mesa 1
+erro >> item macarrao nao existe no cardapio
+erro >> mesa 2 desocupada
+erro >> mesa 3 inexistente
+erro >> item mcflurry de ovo maltine nao existe no cardapio
+sucesso >> pedido realizado: item mc chicken para mesa 1
+sucesso >> pedido realizado: item tortinha de maca para mesa 1
+sucesso >> pedido realizado: item big mac para mesa 1
+erro >> ingredientes insuficientes para produzir o item batata frita
+erro >> item batat frita nao existe no cardapio
+1. mesa 1 pediu big mac
+2. mesa 1 pediu big tasty
+3. mesa 1 pediu big mac
+4. mesa 1 pediu cheddar mcmelt
+5. mesa 1 pediu mc chicken
+6. mesa 1 pediu tortinha de maca
+7. mesa 1 pediu big mac
+=> restaurante fechado
+
+=> restaurante aberto
+area: area_1
+- area sem mesas
+area: area_10
+- area sem mesas
+area: area_11
+- area sem mesas
+area: area_12
+- area sem mesas
+area: area_13
+- area sem mesas
+area: area_14
+- area sem mesas
+area: area_15
+- area sem mesas
+area: area_16
+- area sem mesas
+area: area_17
+- area sem mesas
+area: area_18
+- area sem mesas
+area: area_19
+- area sem mesas
+area: area_2
+- area sem mesas
+area: area_20
+- mesa: 102, status: ocupada
+area: area_3
+- area sem mesas
+area: area_4
+- area sem mesas
+area: area_5
+- area sem mesas
+area: area_6
+- area sem mesas
+area: area_7
+- area sem mesas
+area: area_8
+- area sem mesas
+area: area_9
+- area sem mesas
+area: coberto
+- area sem mesas
+area: descoberto
+- area sem mesas
+area: jardim
+- mesa: 13, status: livre
+area: lado_1
+- area sem mesas
+area: lado_2
+- area sem mesas
+area: lado_3
+- area sem mesas
+area: lado_4
+- area sem mesas
+area: lado_5
+- mesa: 5, status: ocupada
+area: lado_6
+- mesa: 6, status: ocupada
+area: reator nuclear
+- area sem mesas
+area: restaurante universitario
+- area sem mesas
+area: saguao
+- mesa: 17, status: livre
+- mesa: 100, status: ocupada
+- mesa: 101, status: ocupada
+- mesa: 103, status: ocupada
+- mesa: 104, status: ocupada
+- mesa: 105, status: ocupada
+- mesa: 106, status: ocupada
+- mesa: 107, status: ocupada
+- mesa: 108, status: ocupada
+- mesa: 109, status: ocupada
+- mesa: 110, status: ocupada
+- mesa: 111, status: ocupada
+- mesa: 112, status: ocupada
+- mesa: 113, status: ocupada
+- mesa: 114, status: ocupada
+area: sala
+- mesa: 40, status: ocupada
+area: salao
+- mesa: 2, status: ocupada
+- mesa: 23, status: livre
+- mesa: 30, status: livre
+area: salao de eventos
+- mesa: 7, status: livre
+area: terraco
+- mesa: 11, status: livre
+area: varand
+- mesa: 20, status: ocupada
+area: varanda
+- mesa: 1, status: ocupada
+- mesa: 3, status: ocupada
+- mesa: 4, status: livre
+- mesa: 10, status: livre
+- mesa: 19, status: livre
+area: zoologico
+- area sem mesas
+erro >> comando inexistente
+erro >> comando inexistente
+- historico vazio
+=> restaurante fechado
+
+=> restaurante aberto
+area: jardim
+- mesa: 13, status: livre
+area: reator nuclear
+- mesa: 5, status: livre
+area: restaurante universitario
+- mesa: 2, status: livre
+area: saguao
+- mesa: 17, status: livre
+area: salao
+- mesa: 23, status: livre
+area: salao de eventos
+- mesa: 7, status: livre
+area: terraco
+- mesa: 11, status: livre
+area: varanda
+- mesa: 19, status: livre
+area: zoologico
+- mesa: 3, status: livre
+item: esfiha de calabresa
+- calabresa: 1
+- massa de esfiha: 1
+item: esfiha de carne
+- carne: 1
+- cebola: 1
+- massa de esfiha: 1
+- semolina: 1
+- tomate: 1
+item: esfiha de nutella
+- massa de esfiha: 1
+- nutella: 1
+item: esfiha de queijo
+- massa de esfiha: 1
+- queijo: 1
+- salsa: 1
+item: mini churros
+- canela: 1
+- doce de leite: 1
+- massa de churros: 1
+item: pastel de belem
+- massa de pastel: 1
+- nata: 1
+- ovo: 1
+calabresa: 21
+canela: 89
+carne: 1
+cebola: 3
+doce de leite: 55
+massa de churros: 34
+massa de esfiha: 1
+massa de pastel: 7
+nata: 6
+nutella: 9
+ovo: 4
+queijo: 8
+salsa: 13
+semolina: 5
+tomate: 2
+- nenhum pedido foi realizado
+area: jardim
+- mesa: 7, status: ocupada
+area: reator nuclear
+- mesa: 17, status: ocupada
+area: restaurante universitario
+- mesa: 23, status: ocupada
+area: saguao
+- mesa: 5, status: ocupada
+area: salao
+- mesa: 2, status: ocupada
+area: salao de eventos
+- mesa: 13, status: ocupada
+area: terraco
+- mesa: 11, status: ocupada
+area: varanda
+- mesa: 3, status: ocupada
+area: zoologico
+- mesa: 19, status: ocupada
+calabresa: 42
+canela: 178
+carne: 2
+cebola: 6
+doce de leite: 110
+massa de churros: 68
+massa de esfiha: 2
+massa de pastel: 14
+nata: 12
+nutella: 18
+ovo: 8
+queijo: 16
+salsa: 26
+semolina: 10
+tomate: 4
+calabresa: 63
+canela: 267
+carne: 3
+cebola: 9
+doce de leite: 165
+massa de churros: 102
+massa de esfiha: 3
+massa de pastel: 21
+nata: 18
+nutella: 27
+ovo: 12
+queijo: 24
+salsa: 39
+semolina: 15
+tomate: 6
+calabresa: 84
+canela: 356
+carne: 4
+cebola: 12
+doce de leite: 220
+massa de churros: 136
+massa de esfiha: 4
+massa de pastel: 28
+nata: 24
+nutella: 36
+ovo: 16
+queijo: 32
+salsa: 52
+semolina: 20
+tomate: 8
+calabresa: 105
+canela: 445
+carne: 5
+cebola: 15
+doce de leite: 275
+massa de churros: 170
+massa de esfiha: 5
+massa de pastel: 35
+nata: 30
+nutella: 45
+ovo: 20
+queijo: 40
+salsa: 65
+semolina: 25
+tomate: 10
+calabresa: 126
+canela: 534
+carne: 6
+cebola: 18
+doce de leite: 330
+massa de churros: 204
+massa de esfiha: 6
+massa de pastel: 42
+nata: 36
+nutella: 54
+ovo: 24
+queijo: 48
+salsa: 78
+semolina: 30
+tomate: 12
+sucesso >> pedido realizado: item esfiha de carne para mesa 2
+sucesso >> pedido realizado: item esfiha de carne para mesa 2
+sucesso >> pedido realizado: item esfiha de carne para mesa 2
+sucesso >> pedido realizado: item esfiha de carne para mesa 2
+sucesso >> pedido realizado: item esfiha de carne para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+sucesso >> pedido realizado: item mini churros para mesa 2
+mesa: 2
+- esfiha de carne
+- esfiha de carne
+- esfiha de carne
+- esfiha de carne
+- esfiha de carne
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+- mini churros
+calabresa: 126
+canela: 500
+carne: 1
+cebola: 13
+doce de leite: 296
+massa de churros: 170
+massa de esfiha: 1
+massa de pastel: 42
+nata: 36
+nutella: 54
+ovo: 24
+queijo: 48
+salsa: 78
+semolina: 25
+tomate: 7
+item: esfiha de calabresa
+- calabresa: 1
+- massa de esfiha: 1
+item: esfiha de carne
+- carne: 1
+- cebola: 1
+- massa de esfiha: 1
+- semolina: 1
+- tomate: 1
+item: esfiha de nutella
+- massa de esfiha: 1
+- nutella: 1
+item: esfiha de queijo
+- massa de esfiha: 1
+- queijo: 1
+- salsa: 1
+item: mini churros
+- canela: 1
+- doce de leite: 1
+- massa de churros: 1
+item: pastel de belem
+- massa de pastel: 1
+- nata: 1
+- ovo: 1
+1. mesa 2 pediu esfiha de carne
+2. mesa 2 pediu esfiha de carne
+3. mesa 2 pediu esfiha de carne
+4. mesa 2 pediu esfiha de carne
+5. mesa 2 pediu esfiha de carne
+6. mesa 2 pediu mini churros
+7. mesa 2 pediu mini churros
+8. mesa 2 pediu mini churros
+9. mesa 2 pediu mini churros
+10. mesa 2 pediu mini churros
+11. mesa 2 pediu mini churros
+12. mesa 2 pediu mini churros
+13. mesa 2 pediu mini churros
+14. mesa 2 pediu mini churros
+15. mesa 2 pediu mini churros
+16. mesa 2 pediu mini churros
+17. mesa 2 pediu mini churros
+18. mesa 2 pediu mini churros
+19. mesa 2 pediu mini churros
+20. mesa 2 pediu mini churros
+21. mesa 2 pediu mini churros
+22. mesa 2 pediu mini churros
+23. mesa 2 pediu mini churros
+24. mesa 2 pediu mini churros
+25. mesa 2 pediu mini churros
+26. mesa 2 pediu mini churros
+27. mesa 2 pediu mini churros
+28. mesa 2 pediu mini churros
+29. mesa 2 pediu mini churros
+30. mesa 2 pediu mini churros
+31. mesa 2 pediu mini churros
+32. mesa 2 pediu mini churros
+33. mesa 2 pediu mini churros
+34. mesa 2 pediu mini churros
+35. mesa 2 pediu mini churros
+36. mesa 2 pediu mini churros
+37. mesa 2 pediu mini churros
+38. mesa 2 pediu mini churros
+39. mesa 2 pediu mini churros
+=> restaurante fechado
