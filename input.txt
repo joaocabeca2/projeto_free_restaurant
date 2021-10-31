@@ -1,0 +1,318 @@
++ relatorio pedidos
++ relatorio mesas
++ relatorio cardapio
++ relatorio estoque
++ fechar restaurante
+
++ atualizar mesas
+m2.csv
++ atualizar cardapio
+c2.csv
++ atualizar estoque
+e2.csv
++ relatorio pedidos
++ fazer pedido
+5, macarrao
++ fazer pedido
+4, macarrao
++ fazer pedido
+3, macarrao
++ fazer pedido
+3, feijoada
++ relatorio pedidos
++ quero fazer mais um pedido
++ fechar restaurante
+
++ atualizar mesas
+m7.csv
++ relatorio mesas
++ fechar restaurante
+
++ atualizar mesas
+m1.csv
++ atualizar cardapio
+c6.csv
++ atualizar estoque
+e6.csv
++ relatorio estoque
++ fazer pedido
+1, esfiha de carne
++ relatorio estoque
++ fechar restaurante
+
++ relatorio mesas
++ atualizar mesas
+mesas-amarelinho.csv
++ relatorio mesas
++ atualizar mesas
+mesas-ru.csv
++ relatorio mesas
++ fechar restaurante
+
++ relatorio cardapio
++ atualizar cardapio
+cardapio-feijoada.csv
++ relatorio cardapio
++ atualizar cardapio
+cardapio-macarrao.csv
++ relatorio cardapio
++ fechar restaurante
+
++ relatorio estoque
++ atualizar estoque
+estoque-macarrao.csv
++ relatorio estoque
++ atualizar estoque
+estoque-macarrao.csv
++ relatorio estoque
++ atualizar estoque
+estoque-feijoada.csv
++ relatorio estoque
++ fechar restaurante
+
++ fazer pedido
+1, carne de sol
++ fechar restaurante
+
++ atualizar mesas
+mesas-ru.csv
++ fazer pedido
+51, carne de sol
++ fechar restaurante
+
++ atualizar mesas
+mesas-ru.csv
++ fazer pedido
+50, carne de sol
++ fechar restaurante
+
++ atualizar mesas
+mesas-ru.csv
++ atualizar cardapio
+cardapio-feijoada.csv
++ fazer pedido
+50, feijoada
++ fechar restaurante
+
++ atualizar mesas
+mesas-ru.csv
++ atualizar cardapio
+cardapio-feijoada.csv
++ atualizar estoque
+estoque-feijoada.csv
++ fazer pedido
+50, feijoada
++ relatorio pedidos
++ relatorio estoque
++ fechar restaurante
+
++ atualizar mesas
+mesas-amarelinho.csv
++ atualizar cardapio
+cardapio-macarrao.csv
++ relatorio cardapio
++ atualizar estoque
+estoque-macarrao.csv
++ relatorio estoque
++ fazer pedido
+3, macarrao
++ relatorio pedidos
++ relatorio estoque
++ fazer pedido
+4, suco
++ relatorio pedidos
++ relatorio estoque
++ fazer pedido
+6, macarrao
++ relatorio pedidos
++ relatorio estoque
++ atualizar estoque
+estoque-macarrao.csv
++ relatorio estoque
++ fazer pedido
+6, macarrao
++ relatorio pedidos
++ relatorio estoque
++ fazer pedido
+2, suco
++ relatorio pedidos
++ relatorio estoque
++ fechar restaurante
+===================
++ atualizar mesas
+m1.csv
++ atualizar cardapio
+c1.csv
++ atualizar estoque
+e1.csv
++ fazer pedido
+1, big mac
++ fazer pedido
+1, big tasty
++ fazer pedido
+1, big mac
++ fazer pedido
+1, cheddar mcmelt
++ fazer pedido
+1, macarrao
++ fazer pedido
+2, big mac
++ fazer pedido
+3, big mac
++ fazer pedido
+1, mcflurry de ovo maltine
++ atualizar estoque
+e1.csv
++ fazer pedido
+1, mc chicken
++ fazer pedido
+1, tortinha de maca
++ fazer pedido
+1, big mac
++ fazer pedido
+1, batata frita
++ fazer pedido
+1, batat frita
++ fechar restaurante
+
++ atualizar mesas
+m1.csv
++ atualizar mesas
+m2.csv
++ atualizar mesas
+m3.csv
++ atualizar mesas
+m4.csv
++ atualizar mesas
+m5.csv
++ atualizar mesas
+m6.csv
++ atualizar mesas
+m7.csv
++ atualizar mesas
+m8.csv
++ atualizar mesas
+m9.csv
++ atualizar mesas
+m10.csv
++ atualizar mesas
+m1.csv
++ atualizar mesas
+m2.csv
++ atualizar mesas
+m3.csv
++ relatorio mesas
++ fcehar res
++ fcehar restaurante
++ fechar restaurante
+
++ atualizar mesas
+m6.csv
++ atualizar cardapio
+c6.csv
++ atualizar estoque
+e6.csv
++ relatorio mesas
++ relatorio cardapio
++ relatorio estoque
++ relatorio pedidos
++ atualizar mesas
+m5.csv
++ relatorio mesas
++ atualizar estoque
+e6.csv
++ relatorio estoque
++ atualizar estoque
+e6.csv
++ relatorio estoque
++ atualizar estoque
+e6.csv
++ relatorio estoque
++ atualizar estoque
+e6.csv
++ relatorio estoque
++ atualizar estoque
+e6.csv
++ relatorio estoque
++ fazer pedido
+2, esfiha de carne
++ fazer pedido
+2, esfiha de carne
++ fazer pedido
+2, esfiha de carne
++ fazer pedido
+2, esfiha de carne
++ fazer pedido
+2, esfiha de carne
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ fazer pedido
+2, mini churros
++ relatorio pedidos
++ relatorio estoque
++ relatorio cardapio
++ fechar restaurante
